@@ -49,7 +49,7 @@ const Header = () => {
               ))}
             </ul>
           </div>
-          <div className="mt-[400px] xl:mt-0">
+          <div onClick={() => setFlag(!flag)} className="mt-[400px] xl:mt-0">
             <Link to={'/contact'} className="bg-[#0E1018] rounded-lg flex items-center justify-center py-4 px-6  xl:ml-6 text-white">
               <span>Let's Talk</span>
               <PiArrowElbowRightBold className="ml-2" />
