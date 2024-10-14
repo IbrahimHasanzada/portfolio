@@ -24,10 +24,24 @@ const AboutCard = () => {
                 </div>
             </div>
             <ul className="flex gap-1 mt-8">
-                <li className="w-10 h-10 rounded-lg bg-[#0e1018] flex justify-center items-center text-[#576076] text-xl"><FaFacebook /></li>
-                <li className="w-10 h-10 rounded-lg bg-[#0e1018] flex justify-center items-center text-[#576076] text-xl"><FaGithub /></li>
-                <li className="w-10 h-10 rounded-lg bg-[#0e1018] flex justify-center items-center text-[#576076] text-xl"><FaLinkedin /></li>
-                <li className="w-10 h-10 rounded-lg bg-[#0e1018] flex justify-center items-center text-[#576076] text-xl"><FaInstagram /></li>
+                <li className="w-10 h-10 rounded-lg bg-[#0e1018] flex justify-center items-center text-[#576076] text-xl">
+                    <Link target="blank" to={''}>
+                        <FaFacebook />
+                    </Link>
+                </li>
+                <li className="w-10 h-10 rounded-lg bg-[#0e1018] flex justify-center items-center text-[#576076] text-xl">
+                    <Link target="blank" to={'https://github.com/IbrahimHasanzada'}>
+                        <FaGithub />
+                    </Link>
+                </li>
+                <li className="w-10 h-10 rounded-lg bg-[#0e1018] flex justify-center items-center text-[#576076] text-xl">
+                    <Link target="blank" to={'https://www.linkedin.com/in/ibrahim-hasanzada-6b677225a'}>
+                        <FaLinkedin />
+                    </Link>
+                </li>
+                <li className="w-10 h-10 rounded-lg bg-[#0e1018] flex justify-center items-center text-[#576076] text-xl">
+                    <Link target="blank" to={'https://www.instagram.com/ibraheemhasanz'}><FaInstagram /></Link>
+                </li>
             </ul>
         </div>
     )
