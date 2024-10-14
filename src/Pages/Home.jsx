@@ -39,9 +39,9 @@ const Home = () => {
           </section>
         </section>
       </div>
-      <section className='xl:w-full flex flex-col xl:flex-row'>
+      <section className='w-full flex flex-col xl:flex-row gap-3'>
         <Services home={true} />
-        <div className='mt-6  xl:w-[33%]'>
+        <div className='mt-6 px-3  xl:w-[33%]'>
           <Talk />
         </div>
       </section>

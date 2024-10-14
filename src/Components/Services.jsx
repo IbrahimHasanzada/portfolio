@@ -7,20 +7,20 @@ const Services = ({ home }) => {
         { name: 'Optimizating', img: 'app.svg' },
         { name: 'RWD', img: 'rwd-design.svg' },
         { name: 'SEO', img: 'seo.svg' },
-        { name: 'API', img: 'web-optimization.svg' },
+        { name: 'API Integration', img: 'web-optimization.svg' },
         { name: 'Animation', img: 'rwd-design.svg ' },
         { name: 'Code auditing', img: 'app.svg' },
         { name: 'Interactive UI', img: 'view.svg' },
         { name: 'Debbugging', img: 'web-optimization.svg' },
     ]
     return (
-        <div className='mt-6 px-3 w-full'>
+        <div className='mt-6 w-full'>
             <div className='bg-black rounded-2xl'>
-                <div className={`bg-black rounded-2xl  ${home && 'p-6'}`}>
-                    <h3 className='w-full flex justify-between flex-col-reverse md:flex-row  gap-6 px-3 text-[#F0F2F5] text-2xl'>
+                <div className={`bg-black rounded-2xl  ${home && 'p-3'}`}>
+                    <h3 className='w-full flex justify-between flex-col-reverse md:flex-row  gap-6  text-[#F0F2F5] text-2xl p-3'>
                         <span className={`font-medium ${!home && 'text-3xl xl:text-4xl'}`}>Services | <span className={`${home ? 'text-white' : 'text-[#4770FF]'}`}>Offered</span></span>
                         {home ?
-                            <Link className='text-[#4770FF] flex items-center text-base'>See All Services <IoArrowForward /></Link>
+                            <Link to={'/services'} className='text-[#4770FF] flex items-center text-base'>See All Services <IoArrowForward /></Link>
                             :
                             <div className='py-2 px-4 bg-[#0E1018] flex items-center gap-2 rounded-lg '>
                                 <div className="pulsating-circle mt-3"></div>

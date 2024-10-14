@@ -14,7 +14,7 @@ const Header = () => {
     { name:'Contact', path: '/contact', icon: <TbMessage />},
   ]
   return (
-    <header className='wrapper px-3  xs:mx-auto font-["Bricolage_Grotesque",_sans-serif]'>
+    <header className='wrapper px-3 sticky top-0 left-0 right-0 z-20 xs:mx-auto font-["Bricolage_Grotesque",_sans-serif]'>
       <nav className=" flex  items-center justify-between p-3 rounded-2xl bg-black">
         <div className="py-1">
           <Link className="text-2xl font-semibold flex gap-3">

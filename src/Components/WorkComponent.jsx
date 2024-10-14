@@ -31,11 +31,11 @@ export default function WorkComponent() {
       >
         {work.map((item, i) => (
           <SwiperSlide key={i} className='custom-slide '>
-            <div className='flex flex-col justify-start  items-start xs:flex-row xs:items-center xs:justify-between w-full mt-3 text-[#F0F2F5B3]'>
+            <div className='flex flex-col justify-start  items-start gap-2 xs:flex-row xs:items-center xs:justify-between w-full mt-3 text-[#F0F2F5B3]'>
               <div className='text-sm text-start w-[30%] font-medium'>
                 {item.year}
               </div>
-              <div className='flex items-center gap-3 w-[50%]'>
+              <div className='flex items-center gap-3 w-full xs:w-[50%]'>
                 <div className='w-10 h-10 bg-[#0e1018] rounded-lg flex justify-center items-center'>
                   <img
                     style={{ width: "80%", height: "80%", objectFit: "contain" }}
@@ -44,7 +44,7 @@ export default function WorkComponent() {
                     loading="lazy"
                   />
                 </div>
-                <h3 className='font-medium text-base'>{item.name}</h3>
+                <h3 className='font-medium text-base text-nowrap'>{item.name}</h3>
               </div>
 
             </div>
