@@ -7,7 +7,7 @@ const Services = ({ home }) => {
         { name: 'Optimizating', img: 'app.svg' },
         { name: 'RWD', img: 'rwd-design.svg' },
         { name: 'SEO', img: 'seo.svg' },
-        { name: 'API Integration', img: 'web-optimization.svg' },
+        { name: 'API', img: 'web-optimization.svg' },
         { name: 'Animation', img: 'rwd-design.svg ' },
         { name: 'Code auditing', img: 'app.svg' },
         { name: 'Interactive UI', img: 'view.svg' },
